@@ -1,1 +1,30 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok Webhook - DJ Cara</title></head><body><script>if(window.location.search||window.location.hash){document.write("Webhook verification successful")}else{document.write("Webhook endpoint ready")}</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Webhook - DJ Cara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="response"></div>
+    <script>
+        // This endpoint will receive webhook events from TikTok
+        if (window.location.search || window.location.hash) {
+            document.getElementById('response').innerText = 'Webhook verification successful';
+        } else {
+            document.getElementById('response').innerText = 'Webhook endpoint ready';
+        }
+    </script>
+</body>
+</html>
